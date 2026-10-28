@@ -132,3 +132,11 @@ figcaption{font-size:.9rem;color:var(--slate);margin-top:10px}
 .p-head .btns{margin-top:22px}
 .p-head .btn.solid:hover{background:#ffd666}
 .hero-art figcaption a{color:var(--ink);text-decoration-color:var(--comet);text-decoration-thickness:2px}
+.btn.outline{color:var(--ink);border-color:var(--ink)}
+.btn.outline:hover{background:rgba(22,32,74,.06)}
+.cs-hero{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,56px);align-items:center}
+.cs-hero img{width:100%;max-width:440px}
+@media (max-width:760px){.cs-hero{grid-template-columns:1fr}}
+.videos{display:flex;flex-wrap:wrap;gap:clamp(16px,3vw,32px);margin-top:24px}
+.videos figure{margin:0;width:min(300px,100%)}
+.videos video{width:100%;aspect-ratio:9/16;background:#000;border-radius:14px;box-shadow:0 18px 40px -26px rgba(22,32,74,.6)}

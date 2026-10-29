@@ -30,7 +30,6 @@ html{scroll-behavior:smooth}
 .nav a:hover,.nav a[aria-current]{color:var(--fg)}
 .theme-btn{display:flex;align-items:center;gap:8px;height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
 .theme-btn i{width:12px;height:12px;border-radius:50%;border:1.5px solid var(--fg);background:linear-gradient(90deg,var(--fg) 50%,transparent 50%)}
-@media (max-width:560px){.nav{gap:12px;font-size:13px}.nav .hide-sm{display:none}.theme-btn span{display:none}.theme-btn{padding:0 9px}}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border-radius:999px;font-size:14px;border:1px solid var(--line);background:transparent}
@@ -70,7 +69,6 @@ html{scroll-behavior:smooth}
 .row .tag{color:var(--accent-ink)}
 .row .arrow{font-family:'Geist',sans-serif;font-size:18px;color:var(--fg)}
 .row:hover .name{color:var(--fg)}
-@media (max-width:640px){.row{grid-template-columns:32px minmax(0,1fr)}.row .side{grid-column:2;gap:14px}}
 .preview{position:fixed;top:0;left:0;z-index:50;width:340px;height:240px;border-radius:14px;overflow:hidden;pointer-events:none;opacity:0;transform:translate(-9999px,0);transition:opacity .25s ease;box-shadow:0 30px 80px rgba(0,0,0,.45)}
 .preview.show{opacity:1}
 .preview::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 1px,transparent 1px 14px)}
@@ -97,7 +95,6 @@ html{scroll-behavior:smooth}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{padding:8px 13px;border-radius:999px;border:1px solid var(--line);font-family:var(--mono);font-size:12px}
 .chip.soft{font-family:inherit;font-size:13px;background:var(--surface)}
-@media (max-width:520px){.fact{grid-template-columns:1fr;gap:8px}.fact .mono{padding-top:0}}
 
 /* project page */
 .project{max-width:1200px;padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(64px,8vw,110px);animation:pf-in .5s ease both}
@@ -168,4 +165,29 @@ html{scroll-behavior:smooth}
 .lb-mid{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:12px;padding:0 clamp(8px,2vw,24px)}
 .lb-mid img{max-width:calc(100% - 132px);max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 40px 120px rgba(0,0,0,.6)}
 .lb-cap{margin:0;padding:18px clamp(16px,3vw,32px) 24px;text-align:center;font-size:14px;line-height:1.5;color:#c4c8cf}
-@media (max-width:600px){.lb-mid img{max-width:100%}.lb-mid button{display:none}}
+
+/* phone design */
+.menu-btn{display:none;width:44px;height:44px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.menu-btn span{display:block;width:16px;height:1.5px;background:var(--fg);transition:transform .25s}
+.menu-open .menu-btn span:first-child{transform:translateY(3.25px) rotate(45deg)}
+.menu-open .menu-btn span:last-child{transform:translateY(-3.25px) rotate(-45deg)}
+.menu{position:fixed;inset:81px 0 0 0;z-index:19;display:none;flex-direction:column;padding:12px 20px 32px;background:var(--bg);animation:pf-in .3s ease both;overflow:auto}
+.menu a.item{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);font-size:34px;letter-spacing:-.03em}
+.menu a.item span{font-size:18px;color:var(--accent-ink)}
+.menu .mail{margin-top:auto;padding-top:24px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.lb-mob{display:none;justify-content:center;gap:16px;padding:0 0 28px}
+.lb-mob button{width:52px;height:52px}
+@media (max-width:719px){
+  .nav a{display:none}
+  .menu-btn{display:flex}
+  .menu-open .menu{display:flex}
+  .menu-open{overflow:hidden}
+  .row{grid-template-columns:28px minmax(0,1fr) auto}
+  .row .tag,.row .side .yr{display:none}
+  .fact{grid-template-columns:minmax(0,1fr);gap:10px}
+  .fact .mono{padding-top:0!important}
+  .lb-mid button{display:none}
+  .lb-mid img{max-width:100%}
+  .lb-cap{padding-bottom:12px}
+  .lb-mob{display:flex}
+}

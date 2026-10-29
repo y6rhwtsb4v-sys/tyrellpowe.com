@@ -11,7 +11,16 @@
     store('theme', root.dataset.theme); label();
   });
 
-  // Year
+  // Phone menu
+  var mb = document.querySelector('.menu-btn');
+  function setMenu(open) { root.classList.toggle('menu-open', open); if (mb) mb.setAttribute('aria-expanded', open); }
+  if (mb) {
+    mb.addEventListener('click', function () { setMenu(!root.classList.contains('menu-open')); });
+    document.querySelectorAll('.menu a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+    document.querySelector('.brand').addEventListener('click', function () { setMenu(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth >= 720) setMenu(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  }
   // Work list hover preview
   var rows = document.querySelector('.rows');
   var pv = document.querySelector('.preview');
@@ -69,10 +78,16 @@
     function close() { lb.classList.remove('open'); document.body.style.overflow = ''; if (last) last.focus(); }
     zooms.forEach(function (z, i) { z.addEventListener('click', function () { open(i); }); });
     lb.querySelector('.lb-close').addEventListener('click', close);
-    lb.querySelector('.lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(k - 1); });
-    lb.querySelector('.lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(k + 1); });
+    lb.querySelectorAll('.lb-prev').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); show(k - 1); }); });
+    lb.querySelectorAll('.lb-next').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); show(k + 1); }); });
+    var x0 = null, swiped = false;
+    lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; swiped = false; }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 50) { swiped = true; show(k + (dx < 0 ? 1 : -1)); }
+    });
     li.addEventListener('click', function (e) { e.stopPropagation(); });
-    lb.addEventListener('click', close);
+    lb.addEventListener('click', function () { if (swiped) { swiped = false; return; } close(); });
     document.addEventListener('keydown', function (e) {
       if (!lb.classList.contains('open')) return;
       if (e.key === 'Escape') close();

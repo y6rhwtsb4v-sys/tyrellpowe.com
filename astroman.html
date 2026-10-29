@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=086e7248">
+<link rel="stylesheet" href="style.css?v=f8d75db5">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -26,8 +26,16 @@
     <a href="resume.html">Résumé</a>
     <a href="#contact">Contact</a>
     <button class="theme-btn" type="button" aria-label="Switch between dark and light theme"><i></i><span>Dark</span></button>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
   </nav>
 </header>
+<nav class="menu" id="menu" aria-label="Menu">
+  <a class="item" href="index.html#work">Work<span>↓</span></a>
+  <a class="item" href="index.html#about">About<span>↓</span></a>
+  <a class="item" href="resume.html">Résumé<span>↗</span></a>
+  <a class="item" href="#contact">Contact<span>↓</span></a>
+  <a class="mail" href="mailto:official@tyrellpowe.com">official@tyrellpowe.com</a>
+</nav>
 <main id="main">
 <article class="project wrap">
   <a class="back" href="index.html#work">← All work</a>
@@ -73,6 +81,7 @@
   <div class="lb-top"><span class="lb-count"></span><button class="lb-close" type="button" aria-label="Close">✕</button></div>
   <div class="lb-mid"><button class="lb-prev" type="button" aria-label="Previous image">←</button><img alt=""><button class="lb-next" type="button" aria-label="Next image">→</button></div>
   <p class="lb-cap"></p>
+  <div class="lb-mob"><button class="lb-prev" type="button" aria-label="Previous image">←</button><button class="lb-next" type="button" aria-label="Next image">→</button></div>
 </div>
-<script src="site.js?v=086e7248"></script>
+<script src="site.js?v=f8d75db5"></script>
 </body></html>

@@ -1,81 +1,129 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tyrell Powe · Graphic and UI/UX designer</title>
-<meta name="description" content="Portfolio of Tyrell Powe, graphic and UI/UX designer: brand identity, ads, social and Amazon content, and illustration.">
+<meta name="description" content="Portfolio of Tyrell Powe, graphic and UI/UX designer: brand identity, ads, social and Amazon content, apps and illustration.">
 <meta property="og:title" content="Tyrell Powe · Graphic and UI/UX designer">
-<meta property="og:description" content="Portfolio of Tyrell Powe, graphic and UI/UX designer: brand identity, ads, social and Amazon content, and illustration.">
+<meta property="og:description" content="Portfolio of Tyrell Powe, graphic and UI/UX designer: brand identity, ads, social and Amazon content, apps and illustration.">
 <meta property="og:image" content="https://tyrellpowe.com/img/astroman/cover.jpg">
+<meta name="theme-color" content="#0b0c0e">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="wrap"><header class="site-head"><a class="logo" href="index.html">Tyrell Powe</a><nav class="nav" aria-label="Main"><a href="index.html#work" aria-current="page">Work</a><a href="index.html#about">About</a><a href="resume.html">Résumé</a><a href="index.html#contact">Contact</a></nav></header></div>
+<header class="site-head">
+  <a class="brand" href="index.html"><span class="dot"></span>Tyrell Powe</a>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html#work" aria-current="page">Work</a>
+    <a href="index.html#about" class=hide-sm>About</a>
+    <a href="resume.html">Résumé</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-btn" type="button" aria-label="Switch between dark and light theme"><i></i><span>Dark</span></button>
+  </nav>
+</header>
 <main id="main">
-<div class="wrap">
-<section class="hero">
-  <div>
-    <h1>I design brands, ads and picture books.</h1>
-    <p>I'm Tyrell Powe, a graphic design student at Southern New Hampshire University with a concentration in UI/UX. Since February 2026 I've been the designer for Crook Septic, and I make social and Amazon content for small businesses.</p>
-    <span class="status">Open to internships and entry-level remote work</span>
-  </div>
-  <figure class="hero-art">
-    <a href="astroman.html"><img src="img/astroman/cover.jpg" alt="Cover of The Adventures of Astroman and the Helping Hand, an astronaut's rocket circling Earth past a comet" width="1600" height="2400"></a>
-    <figcaption>Astroman, my picture book, <a href="https://www.amazon.com/dp/B0GHYKSY8W">on Amazon</a></figcaption>
-  </figure>
-</section>
-
-<section id="work" aria-labelledby="work-h">
-<h2 class="section-title" id="work-h">Selected work</h2>
-<div class="work">
-  <a class="proj wide" href="crook-septic.html">
-    <div class="thumb" style="background:#2f4a12"><img src="img/crook/thumb.jpg" alt="Crook Septic yard sign, mascot badge and a vertical social ad"></div>
-    <h3>Crook Septic Service</h3><p>Client work: brand system, print, website, social and video ads</p>
-  </a>
-  <a class="proj wide" href="sixteen-eleven.html">
-    <div class="thumb" style="background:#171412"><img src="img/sixteen/strip.jpg" alt="Five screens from the Sixteen Eleven Bible app: reading, verse actions, night mode, word study and library"></div>
-    <h3>Sixteen Eleven Bible</h3><p>Bible study app, from Figma case study to live product</p>
-  </a>
-  <a class="proj wide" href="astroman.html">
-    <div class="thumb"><img src="img/astroman/strip.jpg" alt="Five finished pages from the Astroman picture book, side by side"></div>
-    <h3>Astroman</h3><p>Children's picture book: story, illustration and lettering</p>
-  </a>
-  <a class="proj" href="focus-05.html">
-    <div class="thumb"><img src="img/class/focus-final-2.jpg" alt="Focus 05 banner: Dive into the vibe, over a colorful underwater mural" style="object-position:0 50%"></div>
-    <h3>Focus 05</h3><p>Ad campaign case study for a restaurant</p>
-  </a>
-  <a class="proj" href="print.html">
-    <div class="thumb"><img src="img/class/community-cup.jpg" alt="Community Cup coffee shop grand opening poster" style="object-position:50% 20%"></div>
-    <h3>Posters, print and identity</h3><p>Posters, logos, color and type studies</p>
-  </a>
-  <!-- PROJECTS_FROM_ADOBE -->
-</div>
-</section>
-
-<section class="about" id="about" aria-labelledby="about-h">
-  <div class="about-side"><h2 class="section-title" id="about-h">About</h2><img class="portrait" src="img/tyrell.jpg" alt="Tyrell Powe in round glasses and an ART t-shirt, framed as a strip of 35mm film" loading="lazy"></div>
-  <div>
-    <p>I've been making things for people for years: logos for friends, flyers for events, product photos for sellers. In 2026 that turned into steady client work when Crook Septic hired me to handle their design.</p>
-    <p>At SNHU I'm studying graphic design with a UI/UX concentration and holding a 3.8 GPA. School gave my instincts a process: research the audience, sketch wide, test, revise. You can see that process in the Focus 05 case study.</p>
-    <ul class="facts">
-      <li><strong>Tools</strong><span>Illustrator, Photoshop, InDesign, Premiere Pro, Figma, Squarespace</span></li>
-      <li><strong>What I make</strong><span>Brand identity, social and e-commerce content, posters and print, UI design, illustration</span></li>
-      <li><strong>Working style</strong><span>Remote-ready, fast turnaround, comfortable working directly with clients</span></li>
-    </ul>
+<section class="hero wrap">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="mono" style="margin:0">Graphic and UI/UX designer</p>
+      <h1>I design brands, ads and picture books<b>.</b></h1>
+      <p class="lede">I'm Tyrell Powe, a graphic design student at Southern New Hampshire University with a concentration in UI/UX. Since February 2026 I've been the designer for Crook Septic, and I make social and Amazon content for small businesses.</p>
+      <span class="status"><i></i>Open to internships and entry-level remote work</span>
+      <div class="pill-row"><a class="btn primary" href="#work">See my work ↓</a><a class="btn" href="#contact">Get in touch</a></div>
+    </div>
+    <figure class="cover-fig">
+      <a class="cover-btn" href="astroman.html" aria-label="Open the Astroman project">
+        <span class="cover-inner">
+          <img src="img/astroman/cover.jpg" alt="Front cover of The Adventures of Astroman and the Helping Hand">
+          <img class="back" src="img/astroman/back.jpg" alt="Back cover with author photo and bio">
+        </span>
+      </a>
+      <figcaption>Astroman, my picture book, <a href="https://www.amazon.com/dp/B0GHYKSY8W">on Amazon</a></figcaption>
+    </figure>
   </div>
 </section>
-</div>
+
+<section class="work wrap" id="work" aria-labelledby="work-h">
+  <div class="list-head mono"><span id="work-h">Selected work</span><span>05</span></div>
+  <div class="rows">
+    <a class="row" href="crook-septic.html" data-name="Crook Septic Service" data-tag="Client" data-preview="img/crook/mascot-logo.png" data-tint="oklch(0.36 0.07 130)">
+      <span class="num">01</span>
+      <span class="title"><span class="name">Crook Septic Service</span><span class="kind">Client work: brand system, print, website, social and video ads</span></span>
+      <span class="side"><span class="tag">Client</span><span>2026</span><span class="arrow">↗</span></span>
+    </a>
+    <a class="row" href="sixteen-eleven.html" data-name="Sixteen Eleven Bible" data-tag="Live app" data-preview="img/sixteen/feature.jpg" data-tint="oklch(0.34 0.05 70)">
+      <span class="num">02</span>
+      <span class="title"><span class="name">Sixteen Eleven Bible</span><span class="kind">Bible study app, from Figma case study to live product</span></span>
+      <span class="side"><span class="tag">Live app</span><span>2026</span><span class="arrow">↗</span></span>
+    </a>
+    <a class="row" href="astroman.html" data-name="Astroman" data-tag="Published" data-preview="img/astroman/cover.jpg" data-tint="oklch(0.32 0.07 280)">
+      <span class="num">03</span>
+      <span class="title"><span class="name">Astroman</span><span class="kind">Children&#x27;s picture book: story, illustration and lettering</span></span>
+      <span class="side"><span class="tag">Published</span><span>2026</span><span class="arrow">↗</span></span>
+    </a>
+    <a class="row" href="focus-05.html" data-name="Focus 05" data-tag="Case study" data-preview="img/class/focus-final-1.jpg" data-tint="oklch(0.36 0.08 200)">
+      <span class="num">04</span>
+      <span class="title"><span class="name">Focus 05</span><span class="kind">Ad campaign case study for a restaurant</span></span>
+      <span class="side"><span class="tag">Case study</span><span>2026</span><span class="arrow">↗</span></span>
+    </a>
+    <a class="row" href="print.html" data-name="Posters, print and identity" data-tag="Coursework" data-preview="img/class/community-cup.jpg" data-tint="oklch(0.34 0.07 30)">
+      <span class="num">05</span>
+      <span class="title"><span class="name">Posters, print and identity</span><span class="kind">Posters, logos, color and type studies</span></span>
+      <span class="side"><span class="tag">Coursework</span><span>2026</span><span class="arrow">↗</span></span>
+    </a>
+  </div>
+</section>
+
+<section class="about wrap" id="about" aria-labelledby="about-h">
+  <div class="about-grid">
+    <div class="portrait"><img src="img/tyrell.jpg" alt="Tyrell Powe in round glasses and an ART t-shirt, framed as a strip of 35mm film" loading="lazy"></div>
+    <div class="about-copy">
+      <p class="mono" style="margin:0" id="about-h">About</p>
+      <h2>I've been making things for people for years: logos for friends, flyers for events, product photos for sellers.</h2>
+      <p class="body">In 2026 that turned into steady client work when Crook Septic hired me to handle their design.</p>
+      <p class="body">At SNHU I'm studying graphic design with a UI/UX concentration and holding a 3.8 GPA. School gave my instincts a process: research the audience, sketch wide, test, revise. You can see that process in the <a href="focus-05.html">Focus 05 case study</a>.</p>
+      <div class="facts">
+        <div class="fact"><p class="mono">Tools</p><div class="chips"><span class="chip">Illustrator</span><span class="chip">Photoshop</span><span class="chip">InDesign</span><span class="chip">Premiere Pro</span><span class="chip">Figma</span><span class="chip">Squarespace</span></div></div>
+        <div class="fact"><p class="mono">What I make</p><div class="chips"><span class="chip soft">Brand identity</span><span class="chip soft">Social and e-commerce content</span><span class="chip soft">Posters and print</span><span class="chip soft">UI design</span><span class="chip soft">Illustration</span></div></div>
+        <div class="fact"><p class="mono" style="padding-top:3px">Working style</p><p>Remote-ready, fast turnaround, comfortable working directly with clients</p></div>
+      </div>
+      <div class="pill-row"><a class="btn primary" href="resume.html">View résumé ↗</a></div>
+    </div>
+  </div>
+</section>
+<section class="contact wrap" id="contact">
+  <div class="contact-card">
+    <div class="contact-copy">
+      <p class="mono" style="margin:0">Contact</p>
+      <h2>Let's make something.</h2>
+      <p>I'm looking for a design internship or an entry-level remote role. If you have a project or an opening, send me a note. I usually reply within a day.</p>
+      <div class="pill-row"><a class="btn email" href="mailto:official@tyrellpowe.com">official@tyrellpowe.com</a><a class="btn small" href="resume.html">View résumé ↗</a></div>
+    </div>
+    <div>
+      <form data-to="official@tyrellpowe.com">
+        <label class="skip" for="cf-name">Name</label><input id="cf-name" name="name" required placeholder="Name" autocomplete="name">
+        <label class="skip" for="cf-email">Email</label><input id="cf-email" name="email" type="email" required placeholder="Email" autocomplete="email">
+        <label class="skip" for="cf-msg">Message</label><textarea id="cf-msg" name="message" rows="4" required placeholder="Tell me about the project or role"></textarea>
+        <button class="btn primary" type="submit">Write the email</button>
+      </form>
+      <div class="sent" role="status"><b>✓</b><p style="font-size:20px;letter-spacing:-.01em">Your email app should open with your message.</p><p style="color:var(--muted);font-size:15px">If it didn't, write to me at <a href="mailto:official@tyrellpowe.com">official@tyrellpowe.com</a>.</p></div>
+    </div>
+  </div>
+</section>
+<div class="preview" aria-hidden="true"><img alt=""><div class="pcap"><b></b><span></span></div></div>
 </main>
-<section class="contact" id="contact"><div class="wrap">
-<h2>Let's make something.</h2>
-<p>I'm looking for a design internship or an entry-level remote role. If you have a project or an opening, send me a note. I usually reply within a day.</p>
-<div class="btns"><a class="btn solid" href="mailto:official@tyrellpowe.com">Email official@tyrellpowe.com</a><a class="btn ghost" href="resume.html">View résumé</a></div>
-</div></section>
-<footer class="site-foot"><div class="wrap">© 2026 Tyrell Powe</div></footer>
+<footer class="site-foot"><span>© 2026 Tyrell Powe</span><a href="#main">↑ Back to top</a></footer>
+<div class="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lb-top"><span class="lb-count"></span><button class="lb-close" type="button" aria-label="Close">✕</button></div>
+  <div class="lb-mid"><button class="lb-prev" type="button" aria-label="Previous image">←</button><img alt=""><button class="lb-next" type="button" aria-label="Next image">→</button></div>
+  <p class="lb-cap"></p>
+</div>
+<script src="site.js"></script>
 </body></html>

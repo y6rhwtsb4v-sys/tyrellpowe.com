@@ -1,73 +1,86 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sixteen Eleven Bible · Tyrell Powe</title>
-<meta name="description" content="Bible study app designed by Tyrell Powe, from Figma case study to live product.">
+<meta name="description" content="A King James Bible app for people who study scripture closely. It started as my Figma case study and is now a live app on the web, packaged for the App Sto">
 <meta property="og:title" content="Sixteen Eleven Bible · Tyrell Powe">
-<meta property="og:description" content="Bible study app designed by Tyrell Powe, from Figma case study to live product.">
+<meta property="og:description" content="A King James Bible app for people who study scripture closely. It started as my Figma case study and is now a live app on the web, packaged for the App Sto">
 <meta property="og:image" content="https://tyrellpowe.com/img/astroman/cover.jpg">
+<meta name="theme-color" content="#0b0c0e">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="wrap"><header class="site-head"><a class="logo" href="index.html">Tyrell Powe</a><nav class="nav" aria-label="Main"><a href="index.html#work" aria-current="page">Work</a><a href="index.html#about">About</a><a href="resume.html">Résumé</a><a href="index.html#contact">Contact</a></nav></header></div>
-<main id="main">
-<div class="wrap">
-<header class="p-head">
-  <a class="back" href="index.html#work">← All work</a>
-  <h1>Sixteen Eleven Bible</h1>
-  <p class="lede">A King James Bible app for people who study scripture closely. It started as my Figma case study and is now a live app on the web, packaged for the App Store and Google Play.</p>
-  <dl class="meta">
-    <div><dt>Role</dt><dd>Product and UI/UX designer</dd></div>
-    <div><dt>Year</dt><dd>2026</dd></div>
-    <div><dt>Platforms</dt><dd>Web, iPhone, iPad, Android</dd></div>
-    <div><dt>Tools</dt><dd>Figma</dd></div>
-  </dl>
-  <div class="btns"><a class="btn solid" href="https://app.sixteeneleven.bible">Open the app</a></div>
+<header class="site-head">
+  <a class="brand" href="index.html"><span class="dot"></span>Tyrell Powe</a>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html#work" aria-current="page">Work</a>
+    <a href="index.html#about" class=hide-sm>About</a>
+    <a href="resume.html">Résumé</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-btn" type="button" aria-label="Switch between dark and light theme"><i></i><span>Dark</span></button>
+  </nav>
 </header>
-
-<figure class="full block"><img src="img/sixteen/ipad-two-sides.jpg" alt="Sixteen Eleven on iPad: Isaiah 53 on the left, the word-study dictionary on the right"><figcaption>On iPad, two panes open at once: the text and a word study side by side.</figcaption></figure>
-
-<section class="block">
-  <div class="text">
-    <h2>The problem</h2>
-    <p>Most Bible apps are built for quick daily reading. Serious students juggle highlights spread across chapters, flip back and forth between passages, and hunt for verses they only half remember. I wanted an app that treats study as the main job: highlights and notes gathered in one place, comparison screens you can switch between quickly, a way to save precepts, and search that finds a verse from a remembered quote.</p>
-    <h2>Design direction</h2>
-    <p>Set it like a book and get out of the way. Warm paper tones, a classic serif for scripture and generous margins make long reading comfortable, with a true night mode for low light. Tools stay one tap away in a bottom bar instead of crowding the page. The identity is a quiet XVI / XI mark, a nod to the 1611 first edition of the King James Bible.</p>
+<main id="main">
+<article class="project wrap">
+  <a class="back" href="index.html#work">← All work</a>
+  <p class="eyebrow">02 — Bible study app, from Figma case study to live product</p>
+  <h1>Sixteen Eleven Bible</h1>
+  <p class="summary">A King James Bible app for people who study scripture closely. It started as my Figma case study and is now a live app on the web, packaged for the App Store and Google Play.</p>
+  <dl class="meta"><div><dt>Role</dt><dd>Product and UI/UX designer</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Platforms</dt><dd>Web, iPhone, iPad, Android</dd></div><div><dt>Tools</dt><dd>Figma</dd></div></dl>
+  <div class="pill-row links"><a class="btn small" href="https://app.sixteeneleven.bible">Open the app ↗</a></div>
+  <figure class="hero-fig"><button class="zoom" type="button" data-src="img/sixteen/ipad-two-sides.jpg" data-cap="On iPad, two panes open at once: the text and a word study side by side." aria-label="Enlarge: On iPad, two panes open at once: the text and a word study side by side."><img src="img/sixteen/ipad-two-sides.jpg" alt="On iPad, two panes open at once: the text and a word study side by side."></button><figcaption class="cap">On iPad, two panes open at once: the text and a word study side by side.</figcaption></figure>
+  
+  <section class="sec">
+    <div class="sec-text"><h2>The problem</h2><p>Most Bible apps are built for quick daily reading. Serious students juggle highlights spread across chapters, flip back and forth between passages, and hunt for verses they only half remember. I wanted an app that treats study as the main job: highlights and notes gathered in one place, comparison screens you can switch between quickly, a way to save precepts, and search that finds a verse from a remembered quote.</p></div>
+    
+  </section>
+  <section class="sec">
+    <div class="sec-text"><h2>Design direction</h2><p>Set it like a book and get out of the way. Warm paper tones, a classic serif for scripture and generous margins make long reading comfortable, with a true night mode for low light. Tools stay one tap away in a bottom bar instead of crowding the page. The identity is a quiet XVI / XI mark, a nod to the 1611 first edition of the King James Bible.</p></div>
+    <div class="gallery" style="--min:180px"><figure><button class="zoom" type="button" data-src="img/sixteen/1-read.jpg" data-cap="Reading" aria-label="Enlarge: Reading"><img src="img/sixteen/1-read.jpg" alt="Reading" loading="lazy"></button><figcaption class="cap">Reading</figcaption></figure><figure><button class="zoom" type="button" data-src="img/sixteen/2-verse-card.jpg" data-cap="Highlight, note, cross references" aria-label="Enlarge: Highlight, note, cross references"><img src="img/sixteen/2-verse-card.jpg" alt="Highlight, note, cross references" loading="lazy"></button><figcaption class="cap">Highlight, note, cross references</figcaption></figure><figure><button class="zoom" type="button" data-src="img/sixteen/3-night.jpg" data-cap="Night mode" aria-label="Enlarge: Night mode"><img src="img/sixteen/3-night.jpg" alt="Night mode" loading="lazy"></button><figcaption class="cap">Night mode</figcaption></figure><figure><button class="zoom" type="button" data-src="img/sixteen/4-word-study.jpg" data-cap="Word study" aria-label="Enlarge: Word study"><img src="img/sixteen/4-word-study.jpg" alt="Word study" loading="lazy"></button><figcaption class="cap">Word study</figcaption></figure><figure><button class="zoom" type="button" data-src="img/sixteen/5-library.jpg" data-cap="Library" aria-label="Enlarge: Library"><img src="img/sixteen/5-library.jpg" alt="Library" loading="lazy"></button><figcaption class="cap">Library</figcaption></figure></div>
+  </section>
+  <section class="sec">
+    <div class="sec-text"><h2>From case study to product</h2><p>The finished app carries the case study&#x27;s ideas through. One verse card gathers highlights in five colors, notes and cross references. A word study explains old King James words with their 1611 meaning and origins. On iPad, two books open at once for comparison. It also reads the whole Bible aloud, works offline, and keeps everything a reader writes on their own device.</p></div>
+    <div class="gallery" style="--min:100%"><figure><button class="zoom" type="button" data-src="img/sixteen/feature.jpg" data-cap="Store feature graphic and app mark" aria-label="Enlarge: Store feature graphic and app mark"><img src="img/sixteen/feature.jpg" alt="Store feature graphic and app mark" loading="lazy"></button><figcaption class="cap">Store feature graphic and app mark</figcaption></figure></div>
+  </section>
+  
+  <nav class="prevnext" aria-label="More projects">
+    <a href="crook-septic.html"><span class="mono">← Previous</span><span class="nm">Crook Septic Service</span></a>
+    <a class="next" href="astroman.html"><span class="mono">Next →</span><span class="nm">Astroman</span></a>
+  </nav>
+</article>
+<section class="contact wrap" id="contact">
+  <div class="contact-card">
+    <div class="contact-copy">
+      <p class="mono" style="margin:0">Contact</p>
+      <h2>Let's make something.</h2>
+      <p>I'm looking for a design internship or an entry-level remote role. If you have a project or an opening, send me a note. I usually reply within a day.</p>
+      <div class="pill-row"><a class="btn email" href="mailto:official@tyrellpowe.com">official@tyrellpowe.com</a><a class="btn small" href="resume.html">View résumé ↗</a></div>
+    </div>
+    <div>
+      <form data-to="official@tyrellpowe.com">
+        <label class="skip" for="cf-name">Name</label><input id="cf-name" name="name" required placeholder="Name" autocomplete="name">
+        <label class="skip" for="cf-email">Email</label><input id="cf-email" name="email" type="email" required placeholder="Email" autocomplete="email">
+        <label class="skip" for="cf-msg">Message</label><textarea id="cf-msg" name="message" rows="4" required placeholder="Tell me about the project or role"></textarea>
+        <button class="btn primary" type="submit">Write the email</button>
+      </form>
+      <div class="sent" role="status"><b>✓</b><p style="font-size:20px;letter-spacing:-.01em">Your email app should open with your message.</p><p style="color:var(--muted);font-size:15px">If it didn't, write to me at <a href="mailto:official@tyrellpowe.com">official@tyrellpowe.com</a>.</p></div>
+    </div>
   </div>
 </section>
-
-<section class="block" aria-label="App screens">
-  <div class="grid5">
-    <figure><img src="img/sixteen/1-read.jpg" alt="Reading Psalm 23" loading="lazy"><figcaption>Reading</figcaption></figure>
-    <figure><img src="img/sixteen/2-verse-card.jpg" alt="Verse actions card with highlight colors and cross references" loading="lazy"><figcaption>Highlight, note, cross references</figcaption></figure>
-    <figure><img src="img/sixteen/3-night.jpg" alt="Genesis 1 in night mode" loading="lazy"><figcaption>Night mode</figcaption></figure>
-    <figure><img src="img/sixteen/4-word-study.jpg" alt="Word study for charity with its 1611 meaning and origin" loading="lazy"><figcaption>Word study</figcaption></figure>
-    <figure><img src="img/sixteen/5-library.jpg" alt="Library home with verse of the day and illustrated book covers" loading="lazy"><figcaption>Library</figcaption></figure>
-  </div>
-</section>
-
-<section class="block">
-  <div class="text">
-    <h2>From case study to product</h2>
-    <p>The finished app carries the case study's ideas through. One verse card gathers highlights in five colors, notes and cross references. A word study explains old King James words with their 1611 meaning and origins. On iPad, two books open at once for comparison. It also reads the whole Bible aloud, works offline, and keeps everything a reader writes on their own device.</p>
-  </div>
-  <figure class="full" style="margin-top:28px"><img src="img/sixteen/feature.jpg" alt="Sixteen Eleven Bible feature graphic with the XVI / XI mark"><figcaption>Store feature graphic and app mark</figcaption></figure>
-</section>
-
-<nav class="next" aria-label="Project navigation"><a href="crook-septic.html">← Crook Septic Service</a><a href="astroman.html">Next: Astroman</a></nav>
-</div>
 </main>
-<section class="contact" id="contact"><div class="wrap">
-<h2>Let's make something.</h2>
-<p>I'm looking for a design internship or an entry-level remote role. If you have a project or an opening, send me a note. I usually reply within a day.</p>
-<div class="btns"><a class="btn solid" href="mailto:official@tyrellpowe.com">Email official@tyrellpowe.com</a><a class="btn ghost" href="resume.html">View résumé</a></div>
-</div></section>
-<footer class="site-foot"><div class="wrap">© 2026 Tyrell Powe</div></footer>
+<footer class="site-foot"><span>© 2026 Tyrell Powe</span><a href="#main">↑ Back to top</a></footer>
+<div class="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lb-top"><span class="lb-count"></span><button class="lb-close" type="button" aria-label="Close">✕</button></div>
+  <div class="lb-mid"><button class="lb-prev" type="button" aria-label="Previous image">←</button><img alt=""><button class="lb-next" type="button" aria-label="Next image">→</button></div>
+  <p class="lb-cap"></p>
+</div>
+<script src="site.js"></script>
 </body></html>
